@@ -1,0 +1,12 @@
+To build the distribution from source:
+
+    $ autoreconf -v -i && automake -v -i
+
+To build and install the VTIMEZONES at the
+standard location:
+    
+    $ ./configure
+    $ make install
+
+See Makefile.am and vzic/Makefile.am to override
+default settings.

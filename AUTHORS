@@ -1,0 +1,7 @@
+The original source of the vzic command was obtained from
+https://github.com/libical/vzic. See the vzic/README file
+for details.
+
+The original source of the tzdata zonefiles was obtained
+from https://www.iana.org/time-zones.
+See the zonefile headers for their respective authors.
