@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+datadir=@datadir@
+
+Name: cyrus-timezones
+Description: Timezones for Cyrus IMAPd
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir}
+Cflags: -I${includedir}
+
+zoneinfo_dir=${datadir}/cyrus-timezones/zoneinfo

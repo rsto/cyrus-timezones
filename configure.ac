@@ -38,5 +38,6 @@ PKG_CHECK_MODULES([GLIB], [glib-2.0])
 AC_SUBST([GLIB_LIBS])
 AC_SUBST([GLIB_CFLAGS])
 
+AC_CONFIG_FILES([cyrus-timezones.pc:cyrus-timezones.pc.in])
 AC_CONFIG_FILES([Makefile vzic/Makefile])
 AC_OUTPUT()

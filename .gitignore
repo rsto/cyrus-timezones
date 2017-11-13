@@ -35,3 +35,5 @@ vzic/cyr_vzic-vzic-output.o
 vzic/cyr_vzic-vzic-parse.o
 vzic/cyr_vzic-vzic.o
 vzic/stamp-h1
+cyrus-timezones-*.tar.gz
+cyrus-timezones.pc
