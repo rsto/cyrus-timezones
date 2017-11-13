@@ -33,10 +33,12 @@ dnl Checks for required libraries
 PKG_CHECK_MODULES([ICAL], [libical])
 AC_SUBST([ICAL_LIBS])
 AC_SUBST([ICAL_CFLAGS])
+PKG_CHECK_VAR([ICAL_LIBDIR], [libical], [libdir])
 
 PKG_CHECK_MODULES([GLIB], [glib-2.0])
 AC_SUBST([GLIB_LIBS])
 AC_SUBST([GLIB_CFLAGS])
+PKG_CHECK_VAR([GLIB_LIBDIR], [glib-2.0], [libdir])
 
 AC_CONFIG_FILES([cyrus-timezones.pc:cyrus-timezones.pc.in])
 AC_CONFIG_FILES([Makefile vzic/Makefile])

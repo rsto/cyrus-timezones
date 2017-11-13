@@ -24,6 +24,8 @@ bin_PROGRAMS = cyr_vzic
 
 EXTRA_DIST =
 
+RPATHS = $(ICAL_LIBDIR):$(GLIB_LIBDIR)
+
 cyr_vzic_SOURCES = \
 	vzic.c \
 	vzic.h \
@@ -48,4 +50,5 @@ cyr_vzic_CFLAGS = \
 
 cyr_vzic_LDFLAGS = \
 	$(ICAL_LIBS) \
-	$(GLIB_LIBS)
+	$(GLIB_LIBS) \
+	-Wl,-rpath,$(RPATHS)
