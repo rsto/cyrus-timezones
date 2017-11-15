@@ -14,6 +14,7 @@ all-local: zoneinfo
 zoneinfo: vzic/cyr_vzic
 	@echo "Generating zoneinfo files"
 	./vzic/cyr_vzic --pure --olson-dir ${srcdir}/tzdata --output-dir zoneinfo
+	$(INSTALL_DATA) ${srcdir}/tzdata/version zoneinfo
 
 # Always use $datadir/cyrus-timezones rather than $pkgdatadir,
 # so we can be sure to report the correct path in pkg-config.
