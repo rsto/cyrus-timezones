@@ -23,7 +23,7 @@ mypkgdatadir = $(datadir)/cyrus-timezones
 install-data-local: zoneinfo
 	@echo "Installing zoneinfo in $(mypkgdatadir)"
 	$(INSTALL) -d zoneinfo/ $(mypkgdatadir)
-	find zoneinfo -exec $(INSTALL_DATA) -D {} $(mypkgdatadir)/{} \;
+	find zoneinfo -type f -exec $(INSTALL_DATA) -D {} $(mypkgdatadir)/{} \;
 
 uninstall-local:
 	rm -rf $(builddir)/zoneinfo
