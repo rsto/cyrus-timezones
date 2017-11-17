@@ -3,7 +3,6 @@ exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@includedir@
 datadir=@datadir@
-datarootdir = @datarootdir@
 
 Name: cyrus-timezones
 Description: Timezones for Cyrus IMAPd
