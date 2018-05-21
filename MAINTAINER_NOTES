@@ -1,0 +1,16 @@
+To update the timezone data, download the latest from iana:
+
+https://www.iana.org/time-zones
+
+Remove the entire tzdata directory, then untar the data file
+into there and add the contents:
+
+e.g.
+
+git clean -f -x -d
+git rm -r tzdata
+mkdir tzdata
+tar -C tzdata -x -f /tmp/tzdata2018e.tar.gz
+git add tzdata
+git commit -m 'tzdata2018e'
+
