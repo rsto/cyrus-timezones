@@ -25,6 +25,7 @@ m4/ltsugar.m4
 m4/ltversion.m4
 m4/lt~obsolete.m4
 missing
+vzic/.deps/
 vzic/Makefile
 vzic/Makefile.in
 vzic/config.h
