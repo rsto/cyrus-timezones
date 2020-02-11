@@ -18,7 +18,7 @@ zoneinfo: vzic/cyr_vzic
 
 # Always use $datadir/cyrus-timezones rather than $pkgdatadir,
 # so we can be sure to report the correct path in pkg-config.
-mypkgdatadir = $(datadir)/cyrus-timezones
+mypkgdatadir = $(DESTDIR)$(datadir)/cyrus-timezones
 
 install-data-local: zoneinfo
 	@echo "Installing zoneinfo in $(mypkgdatadir)"
