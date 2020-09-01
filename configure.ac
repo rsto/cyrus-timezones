@@ -1,15 +1,15 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(cyrus-timezones, 1.0)
+AC_INIT([cyrus-timezones],[1.0])
 AC_CANONICAL_TARGET
 AM_INIT_AUTOMAKE
-AM_CONFIG_HEADER([vzic/config.h])
+AC_CONFIG_HEADERS([vzic/config.h])
 AC_CONFIG_MACRO_DIR([m4])
 
 dnl Checks for programs.
 AC_PROG_CC
 AC_PROG_INSTALL
 AC_PROG_LN_S
-AC_PROG_LIBTOOL
+LT_INIT
 
 dnl Checks for headers
 dnl AC_FUNC_ALLOCA
@@ -42,4 +42,4 @@ PKG_CHECK_VAR([GLIB_LIBDIR], [glib-2.0], [libdir])
 
 AC_CONFIG_FILES([cyrus-timezones.pc:cyrus-timezones.pc.in])
 AC_CONFIG_FILES([Makefile vzic/Makefile])
-AC_OUTPUT()
+AC_OUTPUT
