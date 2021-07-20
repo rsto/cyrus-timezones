@@ -40,6 +40,12 @@ AC_SUBST([GLIB_LIBS])
 AC_SUBST([GLIB_CFLAGS])
 PKG_CHECK_VAR([GLIB_LIBDIR], [glib-2.0], [libdir])
 
+PKG_CHECK_MODULES([JANSSON], [jansson])
+AC_SUBST([JANSSON_LIBS])
+AC_SUBST([JANSSON_CFLAGS])
+PKG_CHECK_VAR([JANSSON_LIBDIR], [jansson], [libdir])
+
 AC_CONFIG_FILES([cyrus-timezones.pc:cyrus-timezones.pc.in])
-AC_CONFIG_FILES([Makefile vzic/Makefile])
+AC_CONFIG_FILES([guesstz.pc:guesstz.pc.in])
+AC_CONFIG_FILES([Makefile vzic/Makefile guesstz/Makefile])
 AC_OUTPUT

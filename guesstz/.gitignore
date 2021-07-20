@@ -1,0 +1,8 @@
+.libs/
+cyr_guesstz
+*.o
+*.la
+*.lo
+*.log
+tests/*.log
+tests/*.trs
